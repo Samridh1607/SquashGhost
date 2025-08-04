@@ -55,18 +55,18 @@ class SquashGhost(App):
 
     def start_reading(self, instance):
         self.current_set = 0
-        self.event = Clock.schedule_interval(self.read_next_word, self.delay_bw_sets)
+        self.read_sets(0)
+        for i in range(1, self.total_sets):
+            self.event = Clock.schedule_once(self.read_set, self.delay_bw_sets)
 
-    def read_next_word(self, dt):
+    def read_set(self, dt):
         self.current_set += 1
-
         for word in self.words:
             self.engine.say(word)
         self.engine.runAndWait()
 
         if self.current_set >= self.total_sets:
             Clock.unschedule(self.event)
-
 
 
 
