@@ -165,6 +165,23 @@ class SquashGhosting(App):
                             print(f"Successfully spoke: {speech_text}")
                         except (subprocess.CalledProcessError, FileNotFoundError):
                             print("No TTS engine available on Linux. Install espeak or festival.")
+                elif sys.platform.startswith('android'):
+                    # Use Android's native TTS
+                    from jnius import autoclass
+                    from android.runnable import run_on_ui_thread
+                
+                    @run_on_ui_thread
+                    def android_speak():
+                        TTS = autoclass('android.speech.tts.TextToSpeech')
+                        Locale = autoclass('java.util.Locale')
+                        PythonActivity = autoclass('org.kivy.android.PythonActivity')
+                        
+                        activity = PythonActivity.mActivity
+                        tts = TTS(activity, None)
+                        tts.setLanguage(Locale.ENGLISH)
+                        tts.speak(speech_text, TTS.QUEUE_FLUSH, None)
+                    
+                    android_speak()
                             
             except Exception as e:
                 print(f"TTS Error for '{text}': {e}")
