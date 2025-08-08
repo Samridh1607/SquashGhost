@@ -29,6 +29,7 @@ class SquashGhosting(App):
         self.current_position_index = 0
         self.total_sets = 5
         self.delay_between_sets = 10
+        self.delay_between_ins = 3
         self.current_positions_list = []
         self.scheduled_events = []
 
@@ -68,6 +69,18 @@ class SquashGhosting(App):
         delay_layout.add_widget(self.delay_label)
         delay_layout.add_widget(self.delay_slider)
         main_layout.add_widget(delay_layout)
+
+        # Instruction delay slider
+        ins_delay_layout = BoxLayout(orientation='vertical', size_hint=(1, 0.2))
+        self.ins_delay_label = Label(text=f'Delay Between Instructions (seconds): {self.delay_between_ins}', font_size=18)
+        self.ins_delay_slider = Slider(
+            min=3, max=5, value=3, step=0.5,
+            size_hint=(1, 0.5)
+        )
+        self.ins_delay_slider.bind(value=self.on_delay_ins_slider_change)
+        ins_delay_layout.add_widget(self.ins_delay_label)
+        ins_delay_layout.add_widget(self.ins_delay_slider)
+        main_layout.add_widget(ins_delay_layout)
         
         # Status label
         self.status_label = Label(
@@ -113,7 +126,6 @@ class SquashGhosting(App):
     def speak_text(self, text):
         """
         Cross-platform text-to-speech using system commands
-        This avoids the COM object issues with pyttsx3
         """
         def speak_worker():
             try:
@@ -200,6 +212,11 @@ class SquashGhosting(App):
         self.delay_between_sets = int(value)
         self.delay_label.text = f'Delay Between Sets (seconds): {self.delay_between_sets}'
 
+    def on_delay_ins_slider_change(self, instance, value):
+        """Update delay between instructions when slider changes"""
+        self.delay_between_ins = float(value)
+        self.ins_delay_label.text = f'Delay Between Instructions (seconds): {self.delay_between_ins}'
+
     def start_training(self, instance):
         """Start the ghosting training session"""
         if not self.is_training:
@@ -262,7 +279,7 @@ class SquashGhosting(App):
         self.speak_text(position)
         
         # Schedule the next position after 3 seconds
-        event = Clock.schedule_once(lambda dt: self.speak_next_position(), 3.0)
+        event = Clock.schedule_once(lambda dt: self.speak_next_position(), self.delay_between_ins)
         self.scheduled_events.append(event)
 
     def complete_current_set(self):
