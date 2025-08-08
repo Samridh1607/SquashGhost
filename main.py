@@ -13,7 +13,7 @@ import os
 
 kivy.require('2.0.0')
 
-class SquashGhostingApp(App):
+class SquashGhosting(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         
@@ -332,4 +332,4 @@ class SquashGhostingApp(App):
         self.scheduled_events.clear()
 
 if __name__ == '__main__':
-    SquashGhostingApp().run()
+    SquashGhosting().run()
