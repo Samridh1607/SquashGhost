@@ -89,14 +89,14 @@
 git clone https://github.com/yourusername/squash-ghosting.git
 cd squash-ghosting
 
-<h4>Install dependencies</h4>h4>
+<h4>Install dependencies</h4>
 pip install kivy==2.0.0
 pip install buildozer
 
-<h4>Run locally</h4>h4>
+<h4>Run locally</h4>
 python main.py
 
-<h4>Build APK</h4>h4>
+<h4>Build APK</h4>s
 buildozer android debug
 
 
