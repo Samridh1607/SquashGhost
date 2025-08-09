@@ -158,8 +158,8 @@
   </tr>
   <tr>
     <td>Number of Sets</td>
-    <td>1-50</td>
-    <td>10</td>
+    <td>5-15</td>
+    <td>5</td>
     <td>Total training sets per session</td>
   </tr>
   <tr>
