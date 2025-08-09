@@ -140,7 +140,7 @@
 <h2>📸 Screenshots</h2>
 
 <p align="center">
-  <img src="screenshots/squashghost.png" width="400" alt="Main Interface" />
+  <img src="screenshots/squashghost.png" width="1000" alt="Main Interface" />
 </p>
 
 <hr>
