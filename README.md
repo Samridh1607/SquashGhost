@@ -66,9 +66,9 @@
 
 <h3>🔧 Build & Deploy</h3>
 <p>
-  <img src="https://img.shields.io/badge/Buildozer-Advanced-FF9800?style=flat-square" />
-  <img src="https://img.shields.io/badge/Android_SDK-Intermediate-3DDC84?style=flat-square&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cross_Platform-Ready-9C27B0?style=flat-square" />
+  <img src="https://img.shields.io/badge/Buildozer-FF9800?style=flat-square" />
+  <img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=flat-square&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cross_Platform-9C27B0?style=flat-square" />
 </p>
 
 <h3>🎮 User Interface</h3>
