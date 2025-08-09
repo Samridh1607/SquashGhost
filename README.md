@@ -11,13 +11,6 @@
   <img src="https://img.shields.io/badge/TTS-Voice_Guided-blue?style=for-the-badge" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/yourusername/squash-ghosting?style=flat-square" />
-  <img src="https://img.shields.io/github/stars/yourusername/squash-ghosting?style=flat-square" />
-  <img src="https://img.shields.io/github/forks/yourusername/squash-ghosting?style=flat-square" />
-  <img src="https://img.shields.io/github/issues/yourusername/squash-ghosting?style=flat-square" />
-</p>
-
 <hr>
 
 <h2>🎯 About Squash Ghosting</h2>
