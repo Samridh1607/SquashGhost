@@ -1,340 +1,152 @@
-# SquashGhost
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squash Ghosting - README</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #4CAF50;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            color: #2c3e50;
-            font-size: 3em;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        .header p {
-            font-size: 1.3em;
-            color: #7f8c8d;
-            font-style: italic;
-            margin-top: 10px;
-        }
-        .app-image {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .app-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-            border: 3px solid #4CAF50;
-        }
-        .section {
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 5px solid #4CAF50;
-        }
-        .section h2 {
-            color: #2c3e50;
-            font-size: 2em;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-        }
-        .section h2::before {
-            content: "🏸";
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .feature-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            border-top: 4px solid #4CAF50;
-            transition: transform 0.3s ease;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        .feature-card h3 {
-            color: #2c3e50;
-            margin-top: 0;
-            font-size: 1.3em;
-        }
-        .feature-card p {
-            color: #666;
-            margin-bottom: 0;
-        }
-        .emoji {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .installation-steps {
-            counter-reset: step-counter;
-        }
-        .step {
-            counter-increment: step-counter;
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            border-left: 4px solid #4CAF50;
-            position: relative;
-        }
-        .step::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: -15px;
-            top: 15px;
-            background: #4CAF50;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        .code {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            overflow-x: auto;
-            margin: 10px 0;
-        }
-        .badge {
-            background: #4CAF50;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-            display: inline-block;
-            margin: 5px 5px 5px 0;
-        }
-        .warning {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            color: #856404;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
-        }
-        .footer {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 2px solid #eee;
-            margin-top: 40px;
-            color: #7f8c8d;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Squash Ghosting — README</title>
+  <style>
+    :root{--accent:#ff6f61;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2;--glass: rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%, #0f1720 100%);}
+    .container{max-width:920px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.7);}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg, rgba(255,111,97,0.12), rgba(88,149,255,0.06));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:28px;letter-spacing:-0.4px}
+    p.lead{margin:6px 0 14px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .screenshot{width:100%;height:100%;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-weight:600;font-size:12px}
+    ul.features{margin:12px 0 0;padding-left:18px;color:#cfe6ff}
+    code.inline{background:rgba(255,255,255,0.03);padding:4px 8px;border-radius:6px;color:#d4f0ff}
+    pre{background:#06121a;padding:12px;border-radius:8px;overflow:auto;border:1px solid rgba(255,255,255,0.02)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#ffa77a);color:#081018;text-decoration:none;font-weight:700}
+    .muted{color:var(--muted)}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🏸 Squash Ghosting</h1>
-            <p>Master Your Court Movement with AI-Powered Training</p>
-            <div class="badges">
-                <span class="badge">Python/Kivy</span>
-                <span class="badge">Android Compatible</span>
-                <span class="badge">Voice Guidance</span>
-                <span class="badge">Customizable Training</span>
+  <div class="container">
+    <header>
+      <div class="logo">SG</div>
+      <div>
+        <h1>Squash Ghosting</h1>
+        <p class="lead">A lightweight, spoken-instruction trainer for squash ghosting practice. Configure sets, pacing and spoken cues to power your court movement training—no coach required.</p>
+        <div style="margin-top:6px"><span class="badge">v1.0.0</span> <span style="margin-left:8px" class="muted">• Built for focused footwork & conditioning</span></div>
+      </div>
+    </header>
+
+    <section class="hero" style="margin-top:18px">
+      <div class="card">
+        <h3>Overview</h3>
+        <p class="muted">Squash Ghosting helps players improve court coverage using repeatable, spoken instructions. Choose how many sets to run, set the delay between sets, and configure the delay between each spoken instruction. The app handles timing and speech synthesis so you can concentrate on movement.</p>
+
+        <h4 style="margin-top:12px">Why it helps</h4>
+        <ul class="features">
+          <li>Removes the mental timer; follow clear spoken cues and trust your feet.</li>
+          <li>Customizable intensity — shorter delays for conditioning, longer for technique work.</li>
+          <li>Accessible — works hands-free with keyboard shortcuts and screen-reader friendly labels.</li>
+        </ul>
+
+        <div style="margin-top:12px">
+          <h4>Core features</h4>
+          <div class="grid-2" style="margin-top:8px">
+            <div>
+              <ul class="features">
+                <li><strong>Sets:</strong> Choose 1–12 sets</li>
+                <li><strong>Delay between sets:</strong> Rest time in seconds or minutes</li>
+                <li><strong>Delay between instructions:</strong> Control pace of spoken cues</li>
+              </ul>
             </div>
-        </div>
-
-        <div class="app-image">
-            <!-- Replace 'your-app-screenshot.png' with the actual path to your application image -->
-            <img src="your-app-screenshot.png" alt="Squash Ghosting Application Interface" />
-            <p><em>Squash Ghosting in action - Transform your ghosting practice with precision timing and voice guidance</em></p>
-        </div>
-
-        <div class="section">
-            <h2>About Squash Ghosting</h2>
-            <p>
-                <strong>Squash Ghosting</strong> is a revolutionary mobile application designed specifically for squash players who want to elevate their ghosting practice to professional levels. Born from the understanding that consistent, structured ghosting is the foundation of elite squash performance, this app transforms your smartphone into a personal squash coach.
-            </p>
-            <p>
-                Whether you're a beginner learning court movement patterns or an advanced player fine-tuning your positioning, Squash Ghosting provides the precision timing and vocal guidance needed to maximize every training session. The app eliminates guesswork from your practice routine, ensuring consistent intervals and allowing you to focus entirely on perfecting your technique.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="emoji">⚙️</div>
-                    <h3>Customizable Set Configuration</h3>
-                    <p>Choose exactly how many sets you want to complete in each training session, from quick 3-set warm-ups to intensive 20-set workouts.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="emoji">⏱️</div>
-                    <h3>Precision Timing Control</h3>
-                    <p>Fine-tune the delay between sets to match your fitness level and training intensity, ensuring optimal rest periods for peak performance.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="emoji">🎤</div>
-                    <h3>Voice-Guided Instructions</h3>
-                    <p>Crystal-clear audio cues guide you through each movement, with customizable delay between spoken instructions to match your response time.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="emoji">📱</div>
-                    <h3>Mobile Optimized</h3>
-                    <p>Built with Kivy for seamless Android performance, ensuring smooth operation even during intense training sessions.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="emoji">🎯</div>
-                    <h3>Structured Practice</h3>
-                    <p>Eliminates the need for external timers or coaches, providing consistent, professional-grade training structure.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="emoji">🔧</div>
-                    <h3>Flexible Configuration</h3>
-                    <p>Adapt the app to any training routine - from speed ghosting to endurance building, all controlled through an intuitive interface.</p>
-                </div>
+            <div>
+              <ul class="features">
+                <li><strong>Speech synthesis:</strong> Human-friendly voice cues</li>
+                <li><strong>Quick controls:</strong> Start / Pause / Stop / Skip</li>
+                <li><strong>Config export:</strong> Save & load training profiles</li>
+              </ul>
             </div>
+          </div>
         </div>
 
-        <div class="section">
-            <h2>How It Works</h2>
-            <p>Squash Ghosting employs a sophisticated yet simple approach to ghosting practice:</p>
-            <div class="installation-steps">
-                <div class="step">
-                    <strong>Set Your Parameters:</strong> Configure the number of sets, rest intervals, and instruction timing based on your training goals and current fitness level.
-                </div>
-                <div class="step">
-                    <strong>Position Yourself:</strong> Stand ready at the center of your squash court with your phone placed securely where you can hear the audio cues clearly.
-                </div>
-                <div class="step">
-                    <strong>Follow Voice Commands:</strong> The app will guide you through each movement sequence with precisely timed verbal instructions, eliminating the need to watch a screen.
-                </div>
-                <div class="step">
-                    <strong>Complete Your Sets:</strong> Execute the required number of sets with automatic timing for both movement phases and rest periods.
-                </div>
-                <div class="step">
-                    <strong>Track Progress:</strong> Use the structured format to monitor your improvement and gradually increase intensity as your skills develop.
-                </div>
-            </div>
+        <h4 style="margin-top:12px">Quick start</h4>
+        <ol style="color:#cfe6ff">
+          <li>Download or clone the repo.</li>
+          <li>Open <code class="inline">index.html</code> in a modern browser (Chrome / Edge).</li>
+          <li>Allow microphone/speech (if requested) and set your preferred voice.</li>
+          <li>Pick number of sets, set delays, and press <code class="inline">Start</code>.</li>
+        </ol>
+
+        <h4 style="margin-top:12px">Example config</h4>
+        <pre><code>{
+  "sets": 6,
+  "delayBetweenSetsSeconds": 90,
+  "delayBetweenInstructionsSeconds": 6,
+  "voice": "default"
+}</code></pre>
+
+        <p class="muted" style="margin-top:10px">Tip: Start with 4–6 sets with 60–90s rest and 6s instruction spacing for mixed technical & conditioning work.</p>
+
+      </div>
+
+      <aside style="display:flex;flex-direction:column;gap:12px">
+        <div class="card" style="padding:12px;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center">
+          <img src="assets/squash-ghosting.jpg" alt="Player ghosting on a squash court — silhouette mid-lunge" class="screenshot" onerror="this.style.display='none'">
+          <div style="text-align:center;margin-top:6px;color:var(--muted);font-size:13px">Replace <code class="inline">assets/squash-ghosting.jpg</code> with your photo or GIF</div>
         </div>
 
-        <div class="section">
-            <h2>Installation Guide</h2>
-            <div class="warning">
-                <strong>⚠️ Note:</strong> This application is built using Python/Kivy and compiled for Android using Buildozer. Ensure your Android device allows installation from unknown sources.
-            </div>
-            
-            <div class="installation-steps">
-                <div class="step">
-                    Download the APK file from the latest release
-                </div>
-                <div class="step">
-                    Enable "Install from Unknown Sources" in your Android settings
-                </div>
-                <div class="step">
-                    Locate the downloaded APK file and tap to install
-                </div>
-                <div class="step">
-                    Grant necessary permissions when prompted (audio access required for voice guidance)
-                </div>
-                <div class="step">
-                    Launch Squash Ghosting and begin your enhanced training experience
-                </div>
-            </div>
+        <div class="card">
+          <h4>Controls & Shortcuts</h4>
+          <ul class="features">
+            <li><strong>Space</strong> — Start / Pause</li>
+            <li><strong>S</strong> — Stop & Reset</li>
+            <li><strong>N</strong> — Skip to next instruction</li>
+            <li><strong>Up/Down</strong> — Increase / Decrease instruction delay</li>
+          </ul>
         </div>
 
-        <div class="section">
-            <h2>Technical Specifications</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🐍 Built with Python</h3>
-                    <p>Developed using Python 3.11 with Kivy framework for robust cross-platform compatibility</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📱 Android Ready</h3>
-                    <p>Compiled with Buildozer for optimal Android performance and native app experience</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎵 Audio Integration</h3>
-                    <p>Utilizes system text-to-speech capabilities for clear, multilingual voice guidance</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💾 Lightweight</h3>
-                    <p>Minimal storage footprint with no external dependencies required after installation</p>
-                </div>
-            </div>
+        <div class="card" style="text-align:center">
+          <h4>Download</h4>
+          <p class="muted">Want a packaged build? Grab the latest release from <code class="inline">/releases</code> or clone the repository.</p>
+          <a class="btn" href="#">Get release</a>
         </div>
+      </aside>
+    </section>
 
-        <div class="section">
-            <h2>Perfect For</h2>
-            <ul style="font-size: 1.1em; line-height: 2;">
-                <li><strong>Competitive Players:</strong> Maintain consistent training routines between matches</li>
-                <li><strong>Coaches:</strong> Standardize ghosting drills for teams and individual students</li>
-                <li><strong>Fitness Enthusiasts:</strong> Use squash court movements for cardiovascular training</li>
-                <li><strong>Beginners:</strong> Learn proper court movement patterns with guided instruction</li>
-                <li><strong>Solo Practitioners:</strong> Train independently without requiring a partner or coach</li>
-            </ul>
-        </div>
+    <section style="margin-top:18px" class="card">
+      <h3>Technical Notes</h3>
+      <p class="muted">The app uses the Web Speech API (speechSynthesis) for spoken cues and a small state machine to sequence instructions and sets. It is intentionally front-end only so you can run it locally without installing dependencies. If you want persistent workout history or synced profiles, add a tiny backend (Firebase / Azure Static Web Apps + Functions).</p>
 
-        <div class="section">
-            <h2>Contributing</h2>
-            <p>
-                We welcome contributions from the squash community! Whether you're a developer interested in enhancing the codebase, a coach with training methodology suggestions, or a player with feature requests, your input helps make Squash Ghosting better for everyone.
-            </p>
-            <div class="code">
-# Clone the repository
-git clone https://github.com/yourusername/squash-ghosting.git
+      <h4 style="margin-top:10px">Files of interest</h4>
+      <ul class="features">
+        <li><code class="inline">index.html</code> — UI and entry point</li>
+        <li><code class="inline">/assets</code> — images & media</li>
+        <li><code class="inline">/js/ghosting.js</code> — timer + speech logic</li>
+        <li><code class="inline">/css/styles.css</code> — optional external styles</li>
+      </ul>
 
-# Set up development environment
-cd squash-ghosting
-pip install kivy buildozer
+      <h4 style="margin-top:10px">Extending the app</h4>
+      <p class="muted">Ideas to make it more coach-like:</p>
+      <ul class="features">
+        <li>Record custom cue sequences (e.g., "drop, front-left, back-right") and cycle through them.</li>
+        <li>Add interval modes (Tabata-style) with warmup/cooldown phases.</li>
+        <li>Integrate audio cues or a metronome in addition to speech.</li>
+      </ul>
+    </section>
 
-# Make your improvements and submit a pull request!
-            </div>
-        </div>
+    <section style="margin-top:18px" class="card">
+      <h3>Contributing</h3>
+      <p class="muted">All contributions welcome — raise an issue for feature suggestions or bug reports. Prefer small, focused PRs. Use conventional commits for clear changelogs.</p>
+      <p style="margin-top:8px"><strong>Example pull request:</strong> Add an optional countdown audio beep before each set starts.</p>
 
-        <div class="footer">
-            <p>🏸 <strong>Squash Ghosting</strong> - Where Technology Meets Training Excellence</p>
-            <p>Developed with passion for the squash community | Version 1.0</p>
-            <p><em>"Perfect practice makes perfect play"</em></p>
-        </div>
-    </div>
+      <h4 style="margin-top:10px">License</h4>
+      <p class="muted">MIT — free to use, modify and share. Credit appreciated.</p>
+    </section>
+
+    <footer>
+      Built with sweat, focus and a little imagination — happy ghosting! • <span class="muted">Squash Ghosting • © 2025</span>
+    </footer>
+
+  </div>
 </body>
 </html>
-
