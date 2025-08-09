@@ -1,20 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Squash Ghosting — README</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">SG</div>
-      <div>
-        <h1>Squash Ghosting</h1>
+
+<h1>Squash Ghosting</h1>
         <p class="lead">A lightweight, spoken-instruction trainer for squash ghosting practice. Configure sets, pacing and spoken cues to power your court movement training—no coach required.</p>
         <div style="margin-top:6px"><span class="badge">v1.0.0</span> <span style="margin-left:8px" class="muted">• Built for focused footwork & conditioning</span></div>
-      </div>
-    </header>
 
     <section class="hero" style="margin-top:18px">
       <div class="card">
