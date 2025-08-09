@@ -164,13 +164,13 @@
   </tr>
   <tr>
     <td>Set Delay</td>
-    <td>5-60s</td>
-    <td>30s</td>
+    <td>10-30s</td>
+    <td>10s</td>
     <td>Rest time between sets</td>
   </tr>
   <tr>
     <td>Instruction Delay</td>
-    <td>1-10s</td>
+    <td>3-5s</td>
     <td>3s</td>
     <td>Time between voice commands</td>
   </tr>
