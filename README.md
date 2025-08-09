@@ -83,3 +83,112 @@
 
 <h3>📱 For Users (APK Installation)</h3>
 
+<h3>👨‍💻 For Developers</h3>
+
+
+<hr>
+
+<h2>📋 How It Works</h2>
+
+<table>
+  <tr>
+    <th>Step</th>
+    <th>Action</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td align="center">1️⃣</td>
+    <td><b>Configure</b></td>
+    <td>Set number of sets, rest intervals, and instruction timing</td>
+  </tr>
+  <tr>
+    <td align="center">2️⃣</td>
+    <td><b>Position</b></td>
+    <td>Stand ready at center court with phone for clear audio</td>
+  </tr>
+  <tr>
+    <td align="center">3️⃣</td>
+    <td><b>Listen</b></td>
+    <td>Follow precisely timed verbal movement instructions</td>
+  </tr>
+  <tr>
+    <td align="center">4️⃣</td>
+    <td><b>Execute</b></td>
+    <td>Complete sets with automatic timing for movement and rest</td>
+  </tr>
+  <tr>
+    <td align="center">5️⃣</td>
+    <td><b>Progress</b></td>
+    <td>Monitor improvement and gradually increase intensity</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>🎯 Perfect For</h2>
+
+<ul>
+  <li><strong>🏆 Competitive Players:</strong> Maintain consistent training routines between matches</li>
+  <li><strong>👨‍🏫 Coaches:</strong> Standardize ghosting drills for teams and individual students</li>
+  <li><strong>💪 Fitness Enthusiasts:</strong> Use squash court movements for cardiovascular training</li>
+  <li><strong>🔰 Beginners:</strong> Learn proper court movement patterns with guided instruction</li>
+  <li><strong>🏃‍♂️ Solo Practitioners:</strong> Train independently without requiring a partner or coach</li>
+</ul>
+
+<hr>
+
+<h2>📸 Screenshots</h2>
+
+<p align="center">
+  <img src="screenshots/main-interface.png" width="250" alt="Main Interface" />
+  <img src="screenshots/settings-screen.png" width="250" alt="Settings Screen" />
+  <img src="screenshots/training-mode.png" width="250" alt="Training Mode" />
+</p>
+
+<hr>
+
+<h2>🔧 Configuration Options</h2>
+
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Range</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Number of Sets</td>
+    <td>1-50</td>
+    <td>10</td>
+    <td>Total training sets per session</td>
+  </tr>
+  <tr>
+    <td>Set Delay</td>
+    <td>5-60s</td>
+    <td>30s</td>
+    <td>Rest time between sets</td>
+  </tr>
+  <tr>
+    <td>Instruction Delay</td>
+    <td>1-10s</td>
+    <td>3s</td>
+    <td>Time between voice commands</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>🤝 Contributing</h2>
+
+<p>We welcome contributions from the squash community! Here's how you can help:</p>
+
+<ul>
+  <li>🐛 <strong>Bug Reports:</strong> Found an issue? Open an issue with details</li>
+  <li>💡 <strong>Feature Requests:</strong> Have an idea? Let us know in discussions</li>
+  <li>🔧 <strong>Code Contributions:</strong> Fork, develop, and submit pull requests</li>
+  <li>📚 <strong>Documentation:</strong> Help improve our docs and tutorials</li>
+  <li>🎨 <strong>UI/UX:</strong> Design improvements and user experience enhancements</li>
+</ul>
+
+
+
