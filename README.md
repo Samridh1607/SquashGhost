@@ -86,11 +86,13 @@
 <h3>👨‍💻 For Developers</h3>
 
 <h4>Clone the repository</h4>
-git clone https://github.com/yourusername/squash-ghosting.git
-cd squash-ghosting
+git clone https://github.com/Samridh1607/SquashGhost.git
+
+cd SquashGhost
 
 <h4>Install dependencies</h4>
 pip install kivy==2.0.0
+
 pip install buildozer
 
 <h4>Run locally</h4>
