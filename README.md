@@ -140,9 +140,7 @@
 <h2>📸 Screenshots</h2>
 
 <p align="center">
-  <img src="screenshots/main-interface.png" width="250" alt="Main Interface" />
-  <img src="screenshots/settings-screen.png" width="250" alt="Settings Screen" />
-  <img src="screenshots/training-mode.png" width="250" alt="Training Mode" />
+  <img src="screenshots/squashghost.png" width="250" alt="Main Interface" />
 </p>
 
 <hr>
