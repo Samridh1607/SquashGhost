@@ -4,27 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Squash Ghosting — README</title>
-  <style>
-    :root{--accent:#ff6f61;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2;--glass: rgba(255,255,255,0.03)}
-    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%, #0f1720 100%);}
-    .container{max-width:920px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.7);}
-    header{display:flex;gap:18px;align-items:center}
-    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg, rgba(255,111,97,0.12), rgba(88,149,255,0.06));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
-    h1{margin:0;font-size:28px;letter-spacing:-0.4px}
-    p.lead{margin:6px 0 14px;color:var(--muted)}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:18px}
-    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
-    .screenshot{width:100%;height:100%;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-weight:600;font-size:12px}
-    ul.features{margin:12px 0 0;padding-left:18px;color:#cfe6ff}
-    code.inline{background:rgba(255,255,255,0.03);padding:4px 8px;border-radius:6px;color:#d4f0ff}
-    pre{background:#06121a;padding:12px;border-radius:8px;overflow:auto;border:1px solid rgba(255,255,255,0.02)}
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#ffa77a);color:#081018;text-decoration:none;font-weight:700}
-    .muted{color:var(--muted)}
-    @media(max-width:880px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
-  </style>
 </head>
 <body>
   <div class="container">
