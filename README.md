@@ -98,7 +98,7 @@ pip install buildozer
 <h4>Run locally</h4>
 python main.py
 
-<h4>Build APK</h4>s
+<h4>Build APK</h4>
 buildozer android debug
 
 
