@@ -59,9 +59,9 @@
 
 <h3>💻 Core Technologies</h3>
 <p>
-  <img src="https://img.shields.io/badge/Python_3.11-Expert-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kivy_2.0.0-Advanced-FF6B6B?style=flat-square" />
-  <img src="https://img.shields.io/badge/TTS_Integration-Advanced-4CAF50?style=flat-square" />
+  <img src="https://img.shields.io/badge/Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kivy_2.0.0-FF6B6B?style=flat-square" />
+  <img src="https://img.shields.io/badge/TTS_Integration-4CAF50?style=flat-square" />
 </p>
 
 <h3>🔧 Build & Deploy</h3>
