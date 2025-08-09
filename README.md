@@ -1,116 +1,92 @@
+<!-- Squash Ghosting Project README -->
 
-<h1>Squash Ghosting</h1>
-        <p class="lead">A lightweight, spoken-instruction trainer for squash ghosting practice. Configure sets, pacing and spoken cues to power your court movement training—no coach required.</p>
-        <div style="margin-top:6px"><span class="badge">v1.0.0</span> <span style="margin-left:8px" class="muted">• Built for focused footwork & conditioning</span></div>
+<h1 align="center">🏸 Squash Ghosting</h1>
+<h3 align="center">AI-Powered Squash Training App | Voice-Guided Ghosting Practice | Python/Kivy Mobile Application</h3>
 
-    <section class="hero" style="margin-top:18px">
-      <div class="card">
-        <h3>Overview</h3>
-        <p class="muted">Squash Ghosting helps players improve court coverage using repeatable, spoken instructions. Choose how many sets to run, set the delay between sets, and configure the delay between each spoken instruction. The app handles timing and speech synthesis so you can concentrate on movement.</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kivy-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Buildozer-FF6B6B?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TTS-Voice_Guided-blue?style=for-the-badge" />
+</p>
 
-        <h4 style="margin-top:12px">Why it helps</h4>
-        <ul class="features">
-          <li>Removes the mental timer; follow clear spoken cues and trust your feet.</li>
-          <li>Customizable intensity — shorter delays for conditioning, longer for technique work.</li>
-          <li>Accessible — works hands-free with keyboard shortcuts and screen-reader friendly labels.</li>
-        </ul>
+<p align="center">
+  <img src="https://img.shields.io/github/license/yourusername/squash-ghosting?style=flat-square" />
+  <img src="https://img.shields.io/github/stars/yourusername/squash-ghosting?style=flat-square" />
+  <img src="https://img.shields.io/github/forks/yourusername/squash-ghosting?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/yourusername/squash-ghosting?style=flat-square" />
+</p>
 
-        <div style="margin-top:12px">
-          <h4>Core features</h4>
-          <div class="grid-2" style="margin-top:8px">
-            <div>
-              <ul class="features">
-                <li><strong>Sets:</strong> Choose 1–12 sets</li>
-                <li><strong>Delay between sets:</strong> Rest time in seconds or minutes</li>
-                <li><strong>Delay between instructions:</strong> Control pace of spoken cues</li>
-              </ul>
-            </div>
-            <div>
-              <ul class="features">
-                <li><strong>Speech synthesis:</strong> Human-friendly voice cues</li>
-                <li><strong>Quick controls:</strong> Start / Pause / Stop / Skip</li>
-                <li><strong>Config export:</strong> Save & load training profiles</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<hr>
 
-        <h4 style="margin-top:12px">Quick start</h4>
-        <ol style="color:#cfe6ff">
-          <li>Download or clone the repo.</li>
-          <li>Open <code class="inline">index.html</code> in a modern browser (Chrome / Edge).</li>
-          <li>Allow microphone/speech (if requested) and set your preferred voice.</li>
-          <li>Pick number of sets, set delays, and press <code class="inline">Start</code>.</li>
-        </ol>
+<h2>🎯 About Squash Ghosting</h2>
+<p>
+  <strong>Squash Ghosting</strong> is a revolutionary mobile application designed specifically for squash players who want to elevate their ghosting practice to professional levels. Transform your smartphone into a personal squash coach with precision timing, customizable training parameters, and crystal-clear voice guidance.
+</p>
 
-        <h4 style="margin-top:12px">Example config</h4>
-        <pre><code>{
-  "sets": 6,
-  "delayBetweenSetsSeconds": 90,
-  "delayBetweenInstructionsSeconds": 6,
-  "voice": "default"
-}</code></pre>
+<p>
+  Whether you're a beginner learning court movement patterns or an advanced player fine-tuning your positioning, this app eliminates guesswork from your practice routine, ensuring consistent intervals and allowing you to focus entirely on perfecting your technique.
+</p>
 
-        <p class="muted" style="margin-top:10px">Tip: Start with 4–6 sets with 60–90s rest and 6s instruction spacing for mixed technical & conditioning work.</p>
+<hr>
 
-      </div>
+<h2>✨ Key Features</h2>
+<table>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="40"></td>
+    <td><b>Customizable Set Configuration:</b></td>
+    <td>Choose exactly how many sets you want to complete in each training session</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Stopwatch.png" width="40"></td>
+    <td><b>Precision Timing Control:</b></td>
+    <td>Fine-tune delay between sets to match your fitness level and training intensity</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Studio%20Microphone.png" width="40"></td>
+    <td><b>Voice-Guided Instructions:</b></td>
+    <td>Crystal-clear audio cues with customizable delay between spoken instructions</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="40"></td>
+    <td><b>Mobile Optimized:</b></td>
+    <td>Built with Kivy for seamless Android performance during intense training</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Direct%20Hit.png" width="40"></td>
+    <td><b>Structured Practice:</b></td>
+    <td>Professional-grade training structure without external timers or coaches</td>
+  </tr>
+</table>
 
-      <aside style="display:flex;flex-direction:column;gap:12px">
-        <div class="card" style="padding:12px;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center">
-          <img src="assets/squash-ghosting.jpg" alt="Player ghosting on a squash court — silhouette mid-lunge" class="screenshot" onerror="this.style.display='none'">
-          <div style="text-align:center;margin-top:6px;color:var(--muted);font-size:13px">Replace <code class="inline">assets/squash-ghosting.jpg</code> with your photo or GIF</div>
-        </div>
+<hr>
 
-        <div class="card">
-          <h4>Controls & Shortcuts</h4>
-          <ul class="features">
-            <li><strong>Space</strong> — Start / Pause</li>
-            <li><strong>S</strong> — Stop & Reset</li>
-            <li><strong>N</strong> — Skip to next instruction</li>
-            <li><strong>Up/Down</strong> — Increase / Decrease instruction delay</li>
-          </ul>
-        </div>
+<h2>🛠 Tech Stack</h2>
 
-        <div class="card" style="text-align:center">
-          <h4>Download</h4>
-          <p class="muted">Want a packaged build? Grab the latest release from <code class="inline">/releases</code> or clone the repository.</p>
-          <a class="btn" href="#">Get release</a>
-        </div>
-      </aside>
-    </section>
+<h3>💻 Core Technologies</h3>
+<p>
+  <img src="https://img.shields.io/badge/Python_3.11-Expert-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kivy_2.0.0-Advanced-FF6B6B?style=flat-square" />
+  <img src="https://img.shields.io/badge/TTS_Integration-Advanced-4CAF50?style=flat-square" />
+</p>
 
-    <section style="margin-top:18px" class="card">
-      <h3>Technical Notes</h3>
-      <p class="muted">The app uses the Web Speech API (speechSynthesis) for spoken cues and a small state machine to sequence instructions and sets. It is intentionally front-end only so you can run it locally without installing dependencies. If you want persistent workout history or synced profiles, add a tiny backend (Firebase / Azure Static Web Apps + Functions).</p>
+<h3>🔧 Build & Deploy</h3>
+<p>
+  <img src="https://img.shields.io/badge/Buildozer-Advanced-FF9800?style=flat-square" />
+  <img src="https://img.shields.io/badge/Android_SDK-Intermediate-3DDC84?style=flat-square&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cross_Platform-Ready-9C27B0?style=flat-square" />
+</p>
 
-      <h4 style="margin-top:10px">Files of interest</h4>
-      <ul class="features">
-        <li><code class="inline">index.html</code> — UI and entry point</li>
-        <li><code class="inline">/assets</code> — images & media</li>
-        <li><code class="inline">/js/ghosting.js</code> — timer + speech logic</li>
-        <li><code class="inline">/css/styles.css</code> — optional external styles</li>
-      </ul>
+<h3>🎮 User Interface</h3>
+<p>
+  <img src="https://img.shields.io/badge/Material_Design-UI/UX-2196F3?style=flat-square" />
+  <img src="https://img.shields.io/badge/Touch_Interface-Mobile_Ready-FF5722?style=flat-square" />
+</p>
 
-      <h4 style="margin-top:10px">Extending the app</h4>
-      <p class="muted">Ideas to make it more coach-like:</p>
-      <ul class="features">
-        <li>Record custom cue sequences (e.g., "drop, front-left, back-right") and cycle through them.</li>
-        <li>Add interval modes (Tabata-style) with warmup/cooldown phases.</li>
-        <li>Integrate audio cues or a metronome in addition to speech.</li>
-      </ul>
-    </section>
+<hr>
 
-    <section style="margin-top:18px" class="card">
-      <h3>Contributing</h3>
-      <p class="muted">All contributions welcome — raise an issue for feature suggestions or bug reports. Prefer small, focused PRs. Use conventional commits for clear changelogs.</p>
-      <p style="margin-top:8px"><strong>Example pull request:</strong> Add an optional countdown audio beep before each set starts.</p>
+<h2>🚀 Quick Start</h2>
 
-      <h4 style="margin-top:10px">License</h4>
-      <p class="muted">MIT — free to use, modify and share. Credit appreciated.</p>
-    </section>
+<h3>📱 For Users (APK Installation)</h3>
 
-    <footer>
-      Built with sweat, focus and a little imagination — happy ghosting! • <span class="muted">Squash Ghosting • © 2025</span>
-    </footer>
-
-  </div>
