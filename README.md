@@ -128,7 +128,7 @@
     <td>V2 is a native Kotlin Android app; V1 is built with Kivy for Android and desktop</td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Puzzle%20Piece.png" width="40"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Puzzle%20Piece.png" width="40"></td>
     <td><b>Training Patterns:</b> 🆕</td>
     <td>Five drills targeting the front corners, the backcourt, diagonals or full-court rally movement <i>(V2 only)</i></td>
   </tr>
@@ -176,8 +176,6 @@
 <hr>
 
 <h2>🚀 Quick Start</h2>
-
-<h3>📱 For Users (APK Installation)</h3>
 
 <h3>👨‍💻 For Developers</h3>
 
