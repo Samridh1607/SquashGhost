@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    tools:context=".ui.MainActivity">
+
+    <!-- ScrollView stays only as a safety net (landscape / huge font scale) -->
+    <LinearLayout
+        android:id="@+id/contentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Title -->
+        <TextView
+            style="@style/FitText"
+            android:layout_height="@dimen/title_height"
+            android:autoSizeMaxTextSize="@dimen/text_title"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04"
+            android:text="@string/title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title" />
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/accent" />
+
+        <!-- Pattern selector -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/patternLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_pattern">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/patternDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="none"
+                android:maxLines="1"
+                android:saveEnabled="false"
+                android:textSize="@dimen/text_field" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Voice selector (can be changed live; applies to the next call) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/voiceLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_gap"
+            android:hint="@string/label_voice">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/voiceDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="none"
+                android:maxLines="1"
+                android:saveEnabled="false"
+                android:textSize="@dimen/text_field" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Number of sets -->
+        <TextView
+            android:id="@+id/setsLabel"
+            style="@style/SliderLabel"
+            tools:text="Number of Sets: 5" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/setsSlider"
+            style="@style/CompactSlider"
+            android:stepSize="1"
+            android:value="5"
+            android:valueFrom="5"
+            android:valueTo="15" />
+
+        <!-- Delay between sets -->
+        <TextView
+            android:id="@+id/setsDelayLabel"
+            style="@style/SliderLabel"
+            tools:text="Delay Between Sets (seconds): 10" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/setsDelaySlider"
+            style="@style/CompactSlider"
+            android:stepSize="5"
+            android:value="10"
+            android:valueFrom="10"
+            android:valueTo="30" />
+
+        <!-- Delay between instructions -->
+        <TextView
+            android:id="@+id/insDelayLabel"
+            style="@style/SliderLabel"
+            tools:text="Delay Between Instructions (seconds): 3.0" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/insDelaySlider"
+            style="@style/CompactSlider"
+            android:stepSize="0.5"
+            android:value="3"
+            android:valueFrom="3"
+            android:valueTo="5" />
+
+        <!-- Status / progress -->
+        <TextView
+            android:id="@+id/statusLabel"
+            style="@style/FitText"
+            android:layout_height="@dimen/status_height"
+            android:layout_marginTop="@dimen/section_gap"
+            android:autoSizeMaxTextSize="@dimen/text_status"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_status"
+            tools:text="Training in progress... (Backcourt / Service Box)" />
+
+        <!-- Up to two lines: "Set 1 completed. Next set starting in 30 seconds..." -->
+        <TextView
+            android:id="@+id/progressLabel"
+            style="@style/FitText"
+            android:layout_height="@dimen/progress_height"
+            android:layout_marginTop="4dp"
+            android:autoSizeMaxTextSize="@dimen/text_progress"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_progress"
+            tools:text="Set 12/15 - Position 3/8: Bottom Right Corner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="12dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startButton"
+                style="@style/ActionButton"
+                android:layout_marginEnd="@dimen/button_gap"
+                android:text="@string/start_training"
+                app:backgroundTint="@color/start_button_tint" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/endButton"
+                style="@style/ActionButton"
+                android:enabled="false"
+                android:text="@string/end_training"
+                app:backgroundTint="@color/end_button_tint" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

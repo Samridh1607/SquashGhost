@@ -1,0 +1,17 @@
+<resources>
+    <!-- "Court at night" palette -->
+    <color name="bg">#FF070B16</color>
+    <color name="surface">#FF101828</color>
+    <color name="accent">#FF22E3FF</color>
+    <color name="accent_dim">#FF0E6E80</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB5C2D6</color>
+    <color name="start_green">#FF33CC33</color>
+    <color name="end_red">#FFCC3333</color>
+    <color name="disabled_fill">#FF2A3344</color>
+    <color name="button_text">#FFFFFFFF</color>
+
+    <!-- Icon -->
+    <color name="ic_bg_top">#FF0B1530</color>
+    <color name="ic_bg_bottom">#FF03060F</color>
+</resources>
